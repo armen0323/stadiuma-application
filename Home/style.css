@@ -87,14 +87,47 @@
   width: 70%;
   margin: 40px 0;
 }
+@media (max-width: 1024px) {
+  .container .whole .ontop .top .topContainer {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .container .whole .ontop .top .topContainer {
+    width: 90%;
+  }
+}
 .container .whole .ontop .top .topContainer .texts {
   color: #ffffff;
   width: 80%;
+}
+@media (max-width: 576px) {
+  .container .whole .ontop .top .topContainer .texts {
+    width: 100%;
+  }
 }
 .container .whole .ontop .top .topContainer .texts .name {
   white-space: nowrap;
   font-size: 52px;
   font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .container .whole .ontop .top .topContainer .texts .name {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .container .whole .ontop .top .topContainer .texts .name {
+    font-size: 32px;
+  }
+}
+@media (max-width: 430px) {
+  .container .whole .ontop .top .topContainer .texts .name {
+    font-size: 27px;
+  }
 }
 .container .whole .ontop .top .topContainer .texts .line {
   height: 3.5px;
@@ -102,17 +135,39 @@
   margin: 30px 160px;
   width: 100px;
 }
+@media (max-width: 1024px) {
+  .container .whole .ontop .top .topContainer .texts .line {
+    margin: 30px auto;
+  }
+}
 .container .whole .ontop .top .topContainer .texts .text {
   width: 90%;
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 4px;
 }
+@media (max-width: 1024px) {
+  .container .whole .ontop .top .topContainer .texts .text {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .container .whole .ontop .top .topContainer .texts .text {
+    width: 100%;
+    font-size: 21px;
+    text-align: center;
+  }
+}
 .container .whole .ontop .top .topContainer .buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
   width: 45%;
+}
+@media (max-width: 576px) {
+  .container .whole .ontop .top .topContainer .buttons {
+    width: 100%;
+  }
 }
 .container .whole .ontop .top .topContainer .buttons .btn {
   color: #ffffff;
@@ -133,11 +188,17 @@
 .container .whole .ontop .top .topContainer .buttons .btnDownload {
   background-color: #178a1f;
   border: 3px solid #178a1f;
+  margin: 0 auto;
 }
 .container .whole .ontop .top .topContainer .buttons .btnContact {
   border: 3px solid #178a1f;
   background: transparent;
   margin-left: 30px;
+}
+@media (max-width: 1024px) {
+  .container .whole .ontop .top .topContainer .buttons .btnContact {
+    display: none;
+  }
 }
 .container .whole .whiteZone {
   width: 100%;

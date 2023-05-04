@@ -12,6 +12,7 @@ let nameValue = ''
 let lastNameValue = ''
 let emailValue = ''
 
+// For name input validation  
 let nameValidation = (value) => {
     const nameRegex = /^[A-Z][a-zA-Z]*$/
 
@@ -25,6 +26,8 @@ let nameValidation = (value) => {
     }
 }
 
+
+// For lastname input validation  
 let lastNameValidation = (value) => {
     const nameRegex = /^[A-Z][a-zA-Z]*$/
 
@@ -38,6 +41,8 @@ let lastNameValidation = (value) => {
     }
 }
 
+
+// For email input validation  
 let emailValidation = (value) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 

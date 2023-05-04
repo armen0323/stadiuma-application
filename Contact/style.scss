@@ -62,7 +62,6 @@ $text: #101010;
       padding: 5px 9px;
       border: 1px solid #d3d3d3;
       cursor: pointer;
-      display: none;
 
       @include screen(767px) {
         display: flex;
@@ -88,7 +87,7 @@ $text: #101010;
         font-size: $headerTitle;
         text-decoration: none;
         cursor: pointer;
-        color: $headerTitleColor;
+        color: $headerLink;
       }
 
       .linkDownload {
@@ -96,7 +95,7 @@ $text: #101010;
       }
 
       .linkContact {
-        color: $headerLink;
+        color: $headerTitleColor;
       }
     }
   }

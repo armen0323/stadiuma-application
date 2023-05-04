@@ -116,15 +116,41 @@ $btnHover: #206725;
         .topContainer {
           width: 70%;
           margin: 40px 0;
+          @include screen(1024px) {
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          @include screen(576px) {
+            width: 90%;
+          }
 
           .texts {
             color: $snow;
             width: 80%;
 
+            @include screen(576px) {
+              width: 100%;
+            }
+
             .name {
               white-space: nowrap;
               font-size: $nameSize;
               font-weight: 600;
+
+              @include screen(1024px) {
+                text-align: center;
+              }
+
+              @include screen(767px) {
+                font-size: 32px;
+              }
+
+              @include screen(430px) {
+                font-size: 27px;
+              }
             }
 
             .line {
@@ -132,6 +158,10 @@ $btnHover: #206725;
               background-color: #178a1f;
               margin: 30px 160px;
               width: 100px;
+
+              @include screen(1024px) {
+                margin: 30px auto;
+              }
             }
 
             .text {
@@ -139,6 +169,16 @@ $btnHover: #206725;
               font-weight: 300;
               font-size: $headerTitle;
               letter-spacing: 4px;
+
+              @include screen(1024px) {
+                margin: 0 auto;
+              }
+
+              @include screen(767px) {
+                width: 100%;
+                font-size: 21px;
+                text-align: center;
+              }
             }
           }
 
@@ -147,6 +187,10 @@ $btnHover: #206725;
             justify-content: space-between;
             margin-top: 30px;
             width: 45%;
+
+            @include screen(576px) {
+              width: 100%;
+            }
 
             .btn {
               color: #ffffff;
@@ -169,12 +213,17 @@ $btnHover: #206725;
             .btnDownload {
               background-color: $btnBackground;
               border: 3px solid $btnBackground;
+              margin: 0 auto;
             }
 
             .btnContact {
               border: 3px solid $btnBackground;
               background: transparent;
               margin-left: 30px;
+
+              @include screen(1024px) {
+                display: none;
+              }
             }
           }
         }
