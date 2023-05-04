@@ -37,18 +37,3 @@ arr.map( element =>{
 })
 
 
-let isMobileHeader = false;
-
-menuIcon.addEventListener('click',()=>{
-    isMobileHeader = !isMobileHeader
-    if(isMobileHeader){
-        header.classList.remove('header');
-        header.classList.add('headerMobile')
-        onTop.style.marginTop = 0
-    }else{
-        onTop.style.marginTop = 80 + 'px'
-        header.classList.remove('headerMobile');
-        header.classList.add('header')
-    }
-    
-})
